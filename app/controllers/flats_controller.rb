@@ -1,5 +1,5 @@
 class FlatsController < ApplicationController
-  before_action :find_flat, only: [:show, :edit, :destroy]
+  before_action :find_flat, only: [:show, :edit, :update, :destroy]
 
   def index
     @flats = Flat.all
